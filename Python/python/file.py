@@ -48,7 +48,7 @@ print(person) # This will print the person array without eye color
 for topping in pizza_toppings:
     if topping == 'Pepperoni':
         continue
-    print('After 1st if statement') # This print After 1st if statement always no matter what the topping is
+    print('After 1st if statement') # This print after 1st if statement always no matter what the topping is
     if topping == 'Olives':
         break
 
