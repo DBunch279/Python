@@ -1,9 +1,10 @@
+#Python For Loops
 def basic():
     print("Basic:")
     for i in range(150):
         print(i+1)
     return
-def multiples_of_Five():
+def multiples_of_five():
     print("Mutliples Of Five:")
     for i in range(5, 1001, 5):
         print(i)
