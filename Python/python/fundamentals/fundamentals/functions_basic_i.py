@@ -27,6 +27,7 @@ print(number_of_fingers())
 #5 Output is : 5 Maybe an error because the function does not return anything
 def number_of_great_lakes():
     print(5)
+#Python Functions Basic I
 x = number_of_great_lakes()
 print(x)
 
