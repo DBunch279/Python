@@ -1,4 +1,3 @@
-# Python OOP Users
 from user import User
 
 def main():
