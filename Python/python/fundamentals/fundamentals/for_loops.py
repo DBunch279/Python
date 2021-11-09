@@ -41,7 +41,7 @@ def flexible_counter():
     return
 
 basic()
-multiples_of_Five()
+multiples_of_five()
 counting_the_dojo_way()
 whoa_that_sucker_huge()
 countdown_by_fours()
