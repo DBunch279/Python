@@ -1,4 +1,4 @@
-from user import User
+from user_old import User
 
 def main():
     josh = User(5000, "Josh")
