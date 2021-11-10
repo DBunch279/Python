@@ -1,5 +1,5 @@
 # Python OOP Users
-from user import User
+from user_old import User
 
 def main():
     josh = User(5000, "Josh")
@@ -19,6 +19,7 @@ def main():
     print("")
     print("Josh Buys Coke out of Coke Machine - $3000 [I know that is alot for coke right]")
     josh.make_withdrawal(3000).display_user_balance()
+    josh.display_user_balance()
 
     print("")
     print("Will Makes two Deposits and two Widthdrawals + 1000(x2) - 250(x2)")
