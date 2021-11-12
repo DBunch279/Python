@@ -1,5 +1,5 @@
 # Python OOP Ninja Pets
-from ninja import Ninja, Pet, Trained_Pet
+from ninja_pet import Ninja, Pet, Trained_Pet
 
 def main():
     craig = Ninja("Craig", "Thomas", 10, 10, Pet("Pooch", "Dog", []))
