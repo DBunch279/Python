@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Number Game</title>
+</head>
+<body>
+    <div id=container>
+        <h2 id="title">Welcome to the Great Number Game!</h2>
+        <h3 class="text">I am thinking of a number between 1 and 100</h3> 
+        <h3 class="text">Take a Guess!</h3>
+        {% if hasGuessed == True %}
+            <div id=middle_square style="background-color: {{fillcolor}};">{{filltext}}
+                {% if hasCompleted == True %}
+                        <a href="/"><button id="play_again" name="playagain">Play Again</button></a>
+                {% endif%}
+            </div>
+        {% endif %}
+        <form action="#" method="post">
+            <input id="inputbox", name="input_number">
+            <div></div>
+            <a href="/guess"><button id="submit">Submit</button></a>
+        </form>  
+    </div>
+
+</body>
+</html>
