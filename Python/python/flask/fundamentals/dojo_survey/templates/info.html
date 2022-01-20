@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/info_style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="name" class="text">{{session['name']}}</h1>
+        <h2 id="location" class="text">Dojo Location: {{session['location']}}</h2>
+        <h2 id="favorite_langauge" class="text">Favorite Language: {{session['language']}}</h2>
+        <h2 id="comments" class="text">Comments: {{session['comments']}}</h2>
+        <a href="/">Home</a>
+    </div>
+</body>
+</html>

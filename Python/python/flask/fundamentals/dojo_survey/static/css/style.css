@@ -1,0 +1,47 @@
+:root
+{
+    --width: 20%;
+}
+
+#container
+{
+    display: flex;
+    flex-flow: column;
+    margin: 3% calc(50% - var(--width)/2);
+    background-color: rgb(72, 71, 78);
+}
+
+#title
+{
+    margin: 10% 10% 3% 10%;
+    color: gold;
+}
+
+.labeltype
+{
+    margin: 0 10%;
+    margin-bottom: 5px;
+    color: white;
+}
+.inputtype
+{
+    margin: 0 10%;
+    margin-bottom: 3%;
+    color: black;
+}
+#comment
+{
+    margin-bottom: 5%;
+    height: 150px;
+}
+#submit_button
+{
+    margin-left: 10%;
+    margin-bottom: 8%;
+    width: 80px;
+    height: 40px;
+    background-color: gold;
+    border-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}

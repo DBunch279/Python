@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <form action="/data" method="post">
+        <div id="container">
+            <h1 id="title">Dojo Survey</h1>
+            <label for="name" id="name_label" class="labeltype">Name:</label>
+            <input type="text" id="name" class="inputtype" name="name">
+    
+            <label for="location" id="location_label" class="labeltype">Dojo Location:</label>
+            <input list="location" id="location_list" class="inputtype" name="location" />
+            <datalist id="location" class="inputtype" >
+                <option value="--Select A Location--">
+                <option value="Chicago IL">
+                <option value="Seattle WA">
+                <option value="Burbank CA">
+                <option value="Arlington VA">
+                <option value="Believue">
+                <option value="Online">
+            </datalist>
+    
+            <label for="favorite_langauge" id="language_label" class="labeltype">Favorite Language:</label>
+            <input list="language" id="favorite_language" class="inputtype" name="language" />
+            <datalist id="language" class="inputtype">
+                <option value="--Select A Language--">
+                <option value="Python">
+                <option value="Javascript">
+                <option value="C#">
+                <option value="Java">
+                <option value="HTML/CSS">
+                <option value="C++">
+                <option value="C">
+                <option value="Swift">
+                <option value="Kotlin">
+                <option value="Typescript">
+                <option value="Machine Code">
+                <option value="Binary">
+            </datalist>
+    
+            <label for="comment" id="comment_label" class="labeltype">Comments:</label>
+            <textarea id="comment" class="inputtype" name="comments"></textarea>
+    
+            <input type="submit" id="submit_button">
+        </div>
+    </form>
+</body>
+</html>
