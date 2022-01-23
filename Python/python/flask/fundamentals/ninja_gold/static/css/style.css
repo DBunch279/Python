@@ -1,0 +1,78 @@
+:root
+{
+    --sqaure_size: 280px;
+    --spacing: calc(var(--sqaure_size)/4);
+    
+    --container_width: calc(var(--sqaure_size)*4 + var(--spacing)*8);
+
+    --title_width: 150px;
+    --description_width: 200px;
+    --button_width: 120px;
+    --button_height: 40px;
+}
+
+#container
+{
+    display: inline-flex;
+    width: var(--container_width);
+    margin: 50px calc(50% - var(--container_width)/2);
+}
+#activity
+{
+    width: var(--container_width);
+    margin: auto calc(50% - var(--container_width)/2);
+}
+#gold_count_label
+{
+    margin: 20px calc(50% - var(--container_width)/2 + 50px + 1.2rem);
+    margin-top: 50px;
+}
+#activity_label
+{
+    margin: 30px calc(50% - var(--container_width)/2 + 50px + 1.2rem);
+}
+#activity_box
+{
+    width: calc(var(--container_width) - 190px);
+    margin: 10px calc((50% - var(--container_width)/2) + 70px);
+    padding: 15px 25px;
+    height: 200px;
+    min-width: calc(var(--container_width) - 190px);
+    max-width: calc(var(--container_width) - 190px);
+    min-height: 200px;
+    max-height: 200px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    border: 1px solid black;
+}
+.gold_tab
+{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    margin: 0 var(--spacing);
+    width: var(--sqaure_size);
+    height: calc(var(--sqaure_size) - 50px);
+}
+.tab_title
+{
+    width: var(--title_width);
+    margin: 20px calc(50% - var(--title_width)/2);
+    text-align: center;
+    font-size: 3em;
+}
+.tab_description
+{
+    width: var(--description_width);
+    margin: 10px calc(50% - var(--description_width)/2);
+    text-align: center;
+    font-size: 1.2em;
+}
+.tab_button
+{
+    width: var(--button_width);
+    height: var(--button_height);
+    margin: 20px calc(50% - var(--button_width)/2);
+    font-size: 1.3em;
+    cursor: pointer;
+}
